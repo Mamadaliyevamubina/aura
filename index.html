@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/favicon.ico" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      .arrow-image{
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative bg-slate-50 w-full conatiner min-h-screen ">
+        <div class="w-24 md:block md:w-1/2 h-full  overflow-hidden animate-fade-in">
+          <img src="public/LA.webp" alt="Landing Image" 
+               class="w-full h-full object-cover transform scale-105 transition duration-1000 ease-out hover:scale-100">
+        </div>
+      </div>
+      <div class=" inset-x-0 bottom-0">
+        <img src="/arrow.png" class="arrow-image animate-bounce w-6 h-6">
+       </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
